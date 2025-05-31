@@ -7,9 +7,9 @@ competition on Kaggle. More details about the competition can be found
 [here](https://www.kaggle.com/competitions/santander-customer-transaction-prediction/overview).
 
 
-## 🎯 Objectives 
+## 🎯 Objective 
 
-The goal of this competition is to identify which customers will make a specific transaction 
+The goal of this competition was to identify which customers will make a specific transaction 
 in the future, irrespective of the amount of money transacted. 
 
 
@@ -35,24 +35,34 @@ score of 0.4941, all these metric averaged over 5 folds. It also achieved a scor
 on the public leaderboard of the competition. 
 
 
+## ✨ Lessons learned
+
+- A good preprocessing pipeline is crucial for improving model performance. Instead of using the raw 
+data and trying to improve the performance by tuning the model, it is better to first try to 
+  improve the data quality and then tune the model. 
+- Feature engineering is a powerful technique to create new features that can improve the model 
+- Using clustering techniques like `KMeans` can help to segment the data and create new features which
+    can improve the model performance.
+
 ## 📁 Directory structure 
 
 ```bash 
-├── 📁data
-   ├── 📊test.csv 
-   ├── 📊train.csv 
 ├── 📁models
    ├── 🐍__init__.py 
    ├── 🐍clustering.py
    ├── 🐍model.py 
+   
 ├── 📁pipeline
    ├── 🐍__init__.py
    ├── 🐍pipeline.py
+   
 ├── 📁preprocessing
    ├── 🐍__init__.py 
    ├── 🐍pca.py 
    ├── 🐍scaler.py 
    ├── 🐍stats.py
+   
+📔example_usage.ipynb
 ```
 
 ## 🧠 Solution Architecture 
